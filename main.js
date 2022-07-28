@@ -13,7 +13,8 @@ function LinkGame(config) {
   this.level = config.level || 0; // 等级
   this.leftDisorderTime = 5; // 剩余重排次数
   this.gifts = [ // 小图片集合
-    'http://image.uc.cn/s/uae/g/3o/cms/resource/1658934262968-0.png',
+    'https://img.icons8.com/clouds/344/emu.png',
+    // 'http://image.uc.cn/s/uae/g/3o/cms/resource/1658934262968-0.png',
     'http://image.uc.cn/s/uae/g/3o/cms/resource/1658934266152-1.png',
     'http://image.uc.cn/s/uae/g/3o/cms/resource/1658934271116-2.png',
     'http://image.uc.cn/s/uae/g/3o/cms/resource/1658934274298-3.png',
