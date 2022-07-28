@@ -629,8 +629,8 @@ $(function () {
     $('.init-box').addClass('hidden');
     $('.game-box').removeClass('hidden');
     var gameConfig = {
-      cellWidth: 42,
-      cellHeight: 42,
+      cellWidth: 60,
+      cellHeight: 60,
       rows: 8,
       cols: 6,
       level: 0,
