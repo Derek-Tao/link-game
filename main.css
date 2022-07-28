@@ -162,7 +162,8 @@
   
     cursor: pointer;
   
-    background: url('http://image.uc.cn/s/uae/g/3o/cms/resource/1658934636393-pic-bg.png') center no-repeat;
+    /* background: url('http://image.uc.cn/s/uae/g/3o/cms/resource/1658934636393-pic-bg.png') center no-repeat; */
+    background: url('./pure.png') center no-repeat;
     background-size: contain;
   }
   
