@@ -30,7 +30,8 @@
     /*border: 1px solid #ccc;*/
     margin: 0 auto;
   
-    background: url('http://image.uc.cn/s/uae/g/3o/cms/resource/1658934626893-game-bg.png') center no-repeat;
+    /* background: url('http://image.uc.cn/s/uae/g/3o/cms/resource/1658934626893-game-bg.png') center no-repeat; */
+    background: url('./back_groud.jpg') center no-repeat;
     background-size: cover;
   }
   
