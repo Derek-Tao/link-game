@@ -199,7 +199,8 @@
     height: 800px;
   
     /* background: rgba(0, 0, 0, .4) url(http://image.uc.cn/s/uae/g/3o/cms/resource/1658934630739-game-over.png) center no-repeat; */
-    background: rgba(0, 0, 0, .4) url(./game_over.png) center no-repeat;
+    /* background: rgba(0, 0, 0, .4) url(./game_over.png) center no-repeat; */
+    background: rgba(0, 0, 0, .4) url(https://img.freepik.com/premium-vector/game-text-game-colorful-cartoon-style-3d-editable-text-effect_535749-56.jpg) center no-repeat;
     background-size: auto;
   }
   
