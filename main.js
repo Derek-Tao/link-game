@@ -12,6 +12,37 @@ function LinkGame(config) {
   this.rows = config.rows + 2 || 8; // 行数
   this.level = config.level || 0; // 等级
   this.leftDisorderTime = 5; // 剩余重排次数
+  this.gifts2 = [ // 小图片集合
+  './icon/dog.png',
+  './icon/cat.png',
+  './icon/butterfly.png',
+  './icon/bug.png',
+  './icon/1659952669386-mmexport1659277136287.png',
+  './clouds/dog-paw-print.png',
+  './icon/bull.png',
+  './icon/fish.png',
+  './icon/orca.png',
+  './icon/shark.png',
+  './icon/bear.png',
+  './icon/black-jaguar.png',
+  './icon/fox.png',
+  './icon/frog-face.png',
+  './icon/walrus.png',
+  './icon/wombat.png',
+  './icon/crab.png',
+  './icon/chinchilla.png',
+  './icon/groomig.png',
+  './icon/incubator2.png',
+  './icon/animal-shelter.png',
+  './icon/unicorn.png',
+  './icon/seagull.png',
+  './icon/swan.png',
+  './icon/pelican.png',
+  './icon/flying-duck.png',
+  './icon/dinosaur-egg.png',
+  './icon/woodpecker.png',
+  './icon/pike.png',
+];
   this.gifts1 = [ // 小图片集合
   'https://img.icons8.com/clouds/72/dog.png',
   'https://img.icons8.com/clouds/72/cat.png',
