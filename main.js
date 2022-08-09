@@ -271,7 +271,7 @@ LinkGame.prototype = {
             col: col,
             isEmpty: false,
             index: count,
-            pic: this.gifts1[parseInt(count / 2) % this.iconTypeCount],
+            pic: this.gifts2[parseInt(count / 2) % this.iconTypeCount],
             width: this.cellWidth,
             height: this.cellHeight,
             isBoundary: false
