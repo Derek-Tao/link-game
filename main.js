@@ -18,7 +18,7 @@ function LinkGame(config) {
   './icon/butterfly.png',
   './icon/bug.png',
   './icon/1659952669386-mmexport1659277136287.png',
-  './clouds/dog-paw-print.png',
+  // './clouds/dog-paw-print.png',
   './icon/bull.png',
   './icon/fish.png',
   './icon/orca.png',
