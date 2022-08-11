@@ -158,8 +158,6 @@ LinkGame.prototype = {
     }, 1000);
     this.createMap();
     this.disorder();
-    // this.pause();
-    // this.updateLevel1();
     !isReset && this.bindDomEvents();
     this.updateLevel();
     this.domUpdateScore();
@@ -256,7 +254,7 @@ LinkGame.prototype = {
   updateLevel: function () {
     this.updateDomNumbers($('.level'), this.level + 1, 1);
   },
-  updateLevel1: function () {
+  pauseOrResume: function () {
     this.pauseFlag = this.pauseFlag? false:true;
   },
   createMap: function () {
@@ -655,8 +653,7 @@ LinkGame.prototype = {
     }).on('click', '.disorder', function (event) {
       self.leftDisorderTime-- > 0 && self.disorder();
     }).on('click', '.time', function(event) {
-      // self.pause();
-      self.updateLevel1();
+      self.pauseOrResume();
     }).on('click', '.replay-btn', function () {
       self.score = 0;
       self.level = 0;
