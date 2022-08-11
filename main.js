@@ -151,7 +151,7 @@ LinkGame.prototype = {
     this.linkPictures = [];
     this.preClickInfo = null; // 上一次被点中的图片信息
     this.leftTime = 100; // 剩余时间
-    this.pause = false;
+    this.pauseFlag = false;
     this.points = []; // 图片可以相消时的拐点集合
     this.timmer = setInterval(function () {
       self.updateCountDown();
@@ -234,7 +234,7 @@ LinkGame.prototype = {
   },
 
   updateCountDown: function () {
-    if(this.pause){
+    if(this.pauseFlag){
       return;
     }
     --this.leftTime;
@@ -306,7 +306,7 @@ LinkGame.prototype = {
   },
 
   pause: function () {
-    this.pause = this.pause? false:true;
+    this.pauseFlag = this.pauseFlag? false:true;
   },
 
   renderMap: function () {
