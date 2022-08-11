@@ -24,7 +24,6 @@ function LinkGame(config) {
   './icon/orca.png',
   './icon/shark.png',
   './icon/bear.png',
-  './icon/black-jaguar.png',
   './icon/fox.png',
   './icon/frog-face.png',
   './icon/walrus.png',
@@ -651,8 +650,8 @@ LinkGame.prototype = {
       self.checkMatch(data);
     }).on('click', '.disorder', function (event) {
       self.leftDisorderTime-- > 0 && self.disorder();
-    }).on('click', '.time', function(event){
-      self.leftDisorderTime-- > 0 && self.pause();
+    }).on('click', '.time', function(event) {
+      self.pause();
     }).on('click', '.replay-btn', function () {
       self.score = 0;
       self.level = 0;
