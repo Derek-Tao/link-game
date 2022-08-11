@@ -159,7 +159,7 @@ LinkGame.prototype = {
     this.createMap();
     this.disorder();
     // this.pause();
-    this.updateLevel1();
+    // this.updateLevel1();
     !isReset && this.bindDomEvents();
     this.updateLevel();
     this.domUpdateScore();
