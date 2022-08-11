@@ -152,12 +152,14 @@ LinkGame.prototype = {
     this.linkPictures = [];
     this.preClickInfo = null; // 上一次被点中的图片信息
     this.leftTime = 100; // 剩余时间
+    this.pause = false;
     this.points = []; // 图片可以相消时的拐点集合
     this.timmer = setInterval(function () {
       self.updateCountDown();
     }, 1000);
     this.createMap();
     this.disorder();
+    this.pause();
     !isReset && this.bindDomEvents();
     this.updateLevel();
     this.domUpdateScore();
@@ -233,6 +235,9 @@ LinkGame.prototype = {
   },
 
   updateCountDown: function () {
+    if(this.pause){
+      return;
+    }
     --this.leftTime;
     if (this.leftTime < 0) {
       clearInterval(this.timmer);
@@ -241,6 +246,7 @@ LinkGame.prototype = {
     }
     this.updateDomNumbers($('.time'), this.leftTime, 1);
   },
+  
   gameOver: function () {
     $('.game-over').removeClass('hidden').find('.history-score').text(this.getHistoryScore() || 0);
     this.updateDomNumbers($('.current-score'), this.score, 3);
@@ -299,6 +305,11 @@ LinkGame.prototype = {
   updateDisorderTime: function () {
     this.updateDomNumbers($('.disorder'), this.leftDisorderTime, 2);
   },
+
+  pause: function () {
+    this.pause = this.pause? false:true;
+  },
+
   renderMap: function () {
     this.$box.html(''); // 将视图清空
     var html = '';
@@ -640,6 +651,8 @@ LinkGame.prototype = {
       self.checkMatch(data);
     }).on('click', '.disorder', function (event) {
       self.leftDisorderTime-- > 0 && self.disorder();
+    }).on('click', '.time', function(event){
+      self.leftDisorderTime-- > 0 && self.pause();
     }).on('click', '.replay-btn', function () {
       self.score = 0;
       self.level = 0;
