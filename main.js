@@ -257,7 +257,7 @@ LinkGame.prototype = {
     this.updateDomNumbers($('.level'), this.level + 1, 1);
   },
   updateLevel1: function () {
-    alter();
+    alert();
   },
   createMap: function () {
     var count = 0;
